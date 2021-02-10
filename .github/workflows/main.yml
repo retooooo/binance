@@ -23,5 +23,5 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - name: Install package
-        run: Rscripts.exe -e "devtools::install_github("retooooo/binance")
+        run: Rscript -e "devtools::install_github("retooooo/binance")
         shell: cmd
