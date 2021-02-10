@@ -7,7 +7,7 @@ db <- DBI::dbConnect(odbc::odbc(),
                      Server = "DESKTOP-MTCGC1L",
                      Database = "binance",
                      UID = "reto",
-                     PWD = "Retoliusienchen29")
+                     PWD = Sys.getenv("SQL_PASSWORD"))
 
 sleep_time <- 10
 symb <- c("BTC", "EGLD", "DATA", "XRP", "DOGE", "ETH")

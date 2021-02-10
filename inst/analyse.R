@@ -9,7 +9,7 @@ db <- DBI::dbConnect(odbc::odbc(),
                      Server = "DESKTOP-MTCGC1L",
                      Database = "binance",
                      UID = "reto",
-                     PWD = "Retoliusienchen29")
+                     PWD = Sys.getenv("SQL_PASSWORD"))
 
 
 x <-  dbGetQuery(db, "SELECT * FROM warehouse.price")
